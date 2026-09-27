@@ -8,7 +8,8 @@ import * as schema from "./schema";
 export type DB = BetterSQLite3Database<typeof schema> & { $client: Database.Database };
 
 export function dataDir(): string {
-  return path.resolve(process.env.LUNCHBOX_DATA_DIR ?? "./data");
+  // the data folder lives outside the build; keep Turbopack from tracing it
+  return path.resolve(/* turbopackIgnore: true */ process.cwd(), process.env.LUNCHBOX_DATA_DIR ?? "data");
 }
 
 export function uploadsDir(): string {
@@ -26,7 +27,7 @@ export function openDb(file: string): DB {
   sqlite.pragma("journal_mode = WAL");
   sqlite.pragma("foreign_keys = ON");
   const db = drizzle(sqlite, { schema }) as DB;
-  migrate(db, { migrationsFolder: path.resolve(process.cwd(), "drizzle") });
+  migrate(db, { migrationsFolder: path.resolve(/* turbopackIgnore: true */ process.cwd(), "drizzle") });
   return db;
 }
 
