@@ -1,0 +1,36 @@
+{
+  "month": "2026-09",
+  "vendor": "Sunny Lunch Co.",
+  "children_named_on_form": ["Maya"],
+  "days": [
+    {
+      "date": "2026-09-08", "day_of_month": 8, "no_service": false, "note": null,
+      "options": [
+        { "label": "A", "dish_name": "Chicken Teriyaki Bowl", "price": 6.5 },
+        { "label": "B", "dish_name": "Cheese Pizza", "price": 5.75 }
+      ],
+      "selections": [{ "child_name": "Maya", "dish_name": "Chicken Teriyaki Bowl", "quantity": 1, "confidence": "high" }]
+    },
+    {
+      "date": "2026-09-09", "day_of_month": 9, "no_service": false, "note": null,
+      "options": [
+        { "label": "A", "dish_name": "Mac & Cheese", "price": 5.5 },
+        { "label": "B", "dish_name": "Veggie Wrap", "price": 6.0 }
+      ],
+      "selections": [{ "child_name": "Maya", "dish_name": "Mac & Cheese", "quantity": 1, "confidence": "medium" }]
+    },
+    {
+      "date": "2026-09-10", "day_of_month": 10, "no_service": true, "note": "PA Day",
+      "options": [], "selections": []
+    },
+    {
+      "date": "2026-09-11", "day_of_month": 11, "no_service": false, "note": null,
+      "options": [
+        { "label": "A", "dish_name": "Beef Tacos", "price": 6.25 },
+        { "label": "B", "dish_name": "Cheese Pizza", "price": 5.75 }
+      ],
+      "selections": [{ "child_name": "Maya", "dish_name": "Cheese Pizza", "quantity": 1, "confidence": "low" }]
+    }
+  ],
+  "warnings": ["The tick on Sept 11 is faint."]
+}

@@ -1,0 +1,31 @@
+{
+  "vendor": "Sunny Lunch Co.",
+  "effective_month": "2026-10",
+  "dishes": [
+    {
+      "dish_name": "Teriyaki Chicken Rice Bowl",
+      "raw_text": "Rice, chicken (chicken, salt), teriyaki sauce (soy sauce, sugar, sesame oil), broccoli, mushrooms.",
+      "ingredients": [
+        { "name": "rice", "sub_ingredients": [] },
+        { "name": "chicken", "sub_ingredients": ["chicken", "salt"] },
+        { "name": "teriyaki sauce", "sub_ingredients": ["soy sauce", "sugar", "sesame oil"] },
+        { "name": "broccoli", "sub_ingredients": [] },
+        { "name": "mushrooms", "sub_ingredients": [] }
+      ],
+      "declared_allergens": ["soy", "wheat", "sesame"],
+      "confidence": "high"
+    },
+    {
+      "dish_name": "Cheese Pizza",
+      "raw_text": "Crust (enriched wheat flour, water, yeast), tomato sauce, mozzarella cheese.",
+      "ingredients": [
+        { "name": "crust", "sub_ingredients": ["enriched wheat flour", "water", "yeast"] },
+        { "name": "tomato sauce", "sub_ingredients": [] },
+        { "name": "mozzarella cheese", "sub_ingredients": [] }
+      ],
+      "declared_allergens": ["wheat", "milk"],
+      "confidence": "high"
+    }
+  ],
+  "warnings": []
+}
